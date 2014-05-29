@@ -1,0 +1,4 @@
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\SmetkaZaNaracka\obj\x86\Debug\SmetkaZaNaracka.exe
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\SmetkaZaNaracka\obj\x86\Debug\SmetkaZaNaracka.pdb
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.exe
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.pdb

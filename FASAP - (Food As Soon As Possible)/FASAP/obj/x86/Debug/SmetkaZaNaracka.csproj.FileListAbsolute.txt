@@ -36,3 +36,16 @@ C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\
 C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\bin\Debug\SmetkaZaNaracka.exe
 C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\bin\Debug\SmetkaZaNaracka.pdb
 C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\Manager.Manager.resources
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.exe
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.pdb
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\bin\Debug\SmetkaZaNaracka.exe
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\bin\Debug\SmetkaZaNaracka.pdb
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.Form1.resources
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.FasapPocetenEkran.resources
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\Manager.Manager.resources
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.SearchFilter.resources
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.csproj.GenerateResource.Cache
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\SmetkaZaNaracka\obj\x86\Debug\SmetkaZaNaracka.exe
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\SmetkaZaNaracka\obj\x86\Debug\SmetkaZaNaracka.pdb
