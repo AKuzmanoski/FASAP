@@ -18,6 +18,7 @@ namespace SmetkaZaNaracka
         {
             InitializeComponent();
             Restorani = new List<Restoran>();
+            //FasapPocetenEkran_Load(null, null);
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -1,0 +1,14 @@
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\bin\x64\Debug\SmetkaZaNaracka.exe
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\bin\x64\Debug\SmetkaZaNaracka.pdb
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\bin\x64\Debug\Oracle.DataAccess.dll
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x64\Debug\SmetkaZaNaracka.FasapNaracka.resources
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x64\Debug\SmetkaZaNaracka.FasapPocetenEkran.resources
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x64\Debug\SmetkaZaNaracka.Info.resources
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x64\Debug\SmetkaZaNaracka.Loading.resources
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x64\Debug\Manager.Manager.resources
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x64\Debug\SmetkaZaNaracka.Properties.Resources.resources
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x64\Debug\SmetkaZaNaracka.SearchFilter.resources
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x64\Debug\FASAP.csproj.GenerateResource.Cache
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x64\Debug\SmetkaZaNaracka.exe
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x64\Debug\SmetkaZaNaracka.pdb
+C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x64\Debug\FASAP.csprojResolveAssemblyReference.cache
