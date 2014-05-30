@@ -63,9 +63,29 @@ namespace SmetkaZaNaracka.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Boards_Wooden_Surface_Background_Texture {
+            get {
+                object obj = ResourceManager.GetObject("Boards-Wooden-Surface-Background-Texture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FASAP_LOGO {
             get {
                 object obj = ResourceManager.GetObject("FASAP-LOGO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FasapBackground {
+            get {
+                object obj = ResourceManager.GetObject("FasapBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

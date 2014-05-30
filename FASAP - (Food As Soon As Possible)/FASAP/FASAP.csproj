@@ -67,6 +67,18 @@
     <Compile Include="FasapPocetenEkran.Designer.cs">
       <DependentUpon>FasapPocetenEkran.cs</DependentUpon>
     </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,11 +98,17 @@
     <Compile Include="SearchFilter.Designer.cs">
       <DependentUpon>SearchFilter.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="FasapNaracka.resx">
       <DependentUpon>FasapNaracka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FasapPocetenEkran.resx">
       <DependentUpon>FasapPocetenEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager.resx">
       <DependentUpon>Manager.cs</DependentUpon>
@@ -129,8 +147,13 @@
     <None Include="Resources\Polna_zvezda.png" />
     <None Include="Resources\Pola_zvezda.png" />
     <None Include="Resources\Prazna_zvezda.png" />
+    <None Include="Resources\Boards-Wooden-Surface-Background-Texture.jpg" />
+    <None Include="Resources\FasapBackground.png" />
     <Content Include="Resources\Resized-HTAHM.png" />
     <None Include="Resources\Resized-HTAHM1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

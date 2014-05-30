@@ -5,10 +5,11 @@ using System.Text;
 
 namespace SmetkaZaNaracka
 {
-    class Restoran
+    public class Restoran
     {
         public int RestoranID { get; set; }
         public string Ime { get; set; }
+        public string PicturePath { get; set; }
         public string Ulica { get; set; }
         public string Grad { get; set; }
         public string RabotnoVreme { get; set; }
@@ -25,6 +26,7 @@ namespace SmetkaZaNaracka
         public Restoran()
         {
             Kontakt = new List<Telefon>();
+            PicturePath = null;
         }
 
         public override string ToString()

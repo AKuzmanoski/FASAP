@@ -49,6 +49,7 @@
             // 
             // logo
             // 
+            this.logo.BackColor = System.Drawing.Color.Transparent;
             this.logo.Image = global::SmetkaZaNaracka.Properties.Resources.FASAP_LOGO;
             this.logo.Location = new System.Drawing.Point(12, 12);
             this.logo.Name = "logo";
@@ -64,12 +65,6 @@
             this.lbNajbarani.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lbNajbarani.FormattingEnabled = true;
             this.lbNajbarani.ItemHeight = 18;
-            this.lbNajbarani.Items.AddRange(new object[] {
-            "1. Гостилница Лира",
-            "2. Ресторан Бигор - Вруток",
-            "3. Ресторан Амигос",
-            "4. ",
-            "5. "});
             this.lbNajbarani.Location = new System.Drawing.Point(12, 215);
             this.lbNajbarani.Name = "lbNajbarani";
             this.lbNajbarani.Size = new System.Drawing.Size(184, 94);
@@ -78,6 +73,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label1.Location = new System.Drawing.Point(12, 192);
@@ -113,20 +109,6 @@
             this.lbKategorija.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lbKategorija.FormattingEnabled = true;
             this.lbKategorija.ItemHeight = 18;
-            this.lbKategorija.Items.AddRange(new object[] {
-            "Гостилници",
-            "Национални",
-            "Интернационални",
-            "Пицерии",
-            "Рибни",
-            "Мексикански",
-            "Италијански",
-            "Кинески",
-            "Шпански",
-            "Медитерански",
-            "Индиски",
-            "Ракија Бар",
-            "Пабови"});
             this.lbKategorija.Location = new System.Drawing.Point(6, 6);
             this.lbKategorija.Name = "lbKategorija";
             this.lbKategorija.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
@@ -149,41 +131,6 @@
             this.lbGrad.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lbGrad.FormattingEnabled = true;
             this.lbGrad.ItemHeight = 18;
-            this.lbGrad.Items.AddRange(new object[] {
-            "Берово",
-            "Битола",
-            "Богданци",
-            "Валандово",
-            "Велес",
-            "Виница",
-            "Гевгелија",
-            "Гостивар",
-            "Дебар",
-            "Делчево",
-            "Демир Капија",
-            "Демир Хисар",
-            "Кавадарци",
-            "Кичево",
-            "Кочани",
-            "Кратово",
-            "Крива Паланка",
-            "Крушево",
-            "Куманово",
-            "Македонски Брод",
-            "Македонска Каменица",
-            "Неготино",
-            "Охрид",
-            "Пехчев",
-            "Прилеп",
-            "Пробиштип",
-            "Радовиш",
-            "Ресен",
-            "Свети Николе",
-            "Скопје",
-            "Струга",
-            "Струмица\t",
-            "Тетово",
-            "Штип"});
             this.lbGrad.Location = new System.Drawing.Point(6, 6);
             this.lbGrad.Name = "lbGrad";
             this.lbGrad.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
@@ -194,18 +141,16 @@
             // 
             this.lbRestorani.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lbRestorani.FormattingEnabled = true;
-            this.lbRestorani.Items.AddRange(new object[] {
-            "Гостилница Лира",
-            "Ресторан Бигор - Вруток",
-            "Ресторан Амигос"});
             this.lbRestorani.Location = new System.Drawing.Point(404, 32);
             this.lbRestorani.Name = "lbRestorani";
             this.lbRestorani.Size = new System.Drawing.Size(296, 277);
             this.lbRestorani.TabIndex = 4;
+            this.lbRestorani.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbRestorani_MouseDoubleClick);
             // 
             // lblRestorani
             // 
             this.lblRestorani.AutoSize = true;
+            this.lblRestorani.BackColor = System.Drawing.Color.Transparent;
             this.lblRestorani.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRestorani.Location = new System.Drawing.Point(401, 12);
             this.lblRestorani.Name = "lblRestorani";
@@ -215,27 +160,30 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(12, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(52, 23);
             this.button2.TabIndex = 1;
             this.button2.Text = "ИНФО";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Location = new System.Drawing.Point(667, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(33, 27);
             this.button1.TabIndex = 6;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FasapPocetenEkran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(707, 328);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

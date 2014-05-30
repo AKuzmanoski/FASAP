@@ -1,6 +1,6 @@
 ﻿namespace SmetkaZaNaracka
 {
-    partial class Form1
+    partial class FasapNaracka
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Појадок");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Предјадења");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Салати");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Тапас");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Тортиљи");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Десерти");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Амигос специјалитети");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Алкохолни пијалоци");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Безалкохолни пијалоци");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Мени Амигос", new System.Windows.Forms.TreeNode[] {
-            treeNode11,
-            treeNode12,
-            treeNode13,
-            treeNode14,
-            treeNode15,
-            treeNode16,
-            treeNode17,
-            treeNode18,
-            treeNode19});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Појадок");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Предјадења");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Салати");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Тапас");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Тортиљи");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Десерти");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Амигос специјалитети");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Алкохолни пијалоци");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Безалкохолни пијалоци");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Мени Амигос", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode7,
+            treeNode8,
+            treeNode9});
             this.treeViewMenija = new System.Windows.Forms.TreeView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.labelLokacija = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.labelRabVreme = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -74,6 +73,7 @@
             this.labelCena = new System.Windows.Forms.Label();
             this.labelOpis = new System.Windows.Forms.Label();
             this.labelIme = new System.Windows.Forms.Label();
+            this.lbKontakt = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKolicina)).BeginInit();
@@ -86,41 +86,41 @@
             this.treeViewMenija.Indent = 12;
             this.treeViewMenija.Location = new System.Drawing.Point(15, 183);
             this.treeViewMenija.Name = "treeViewMenija";
-            treeNode11.Name = "Node3";
-            treeNode11.NodeFont = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            treeNode11.Text = "Појадок";
-            treeNode12.Name = "Node4";
-            treeNode12.NodeFont = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            treeNode12.Text = "Предјадења";
-            treeNode13.Name = "Node5";
-            treeNode13.NodeFont = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            treeNode13.Text = "Салати";
-            treeNode14.Name = "Node6";
-            treeNode14.Text = "Тапас";
-            treeNode15.Name = "Node7";
-            treeNode15.Text = "Тортиљи";
-            treeNode16.Name = "Node8";
-            treeNode16.Text = "Десерти";
-            treeNode17.Name = "Node9";
-            treeNode17.Text = "Амигос специјалитети";
-            treeNode18.Name = "Node10";
-            treeNode18.Text = "Алкохолни пијалоци";
-            treeNode19.Name = "Node11";
-            treeNode19.Text = "Безалкохолни пијалоци";
-            treeNode20.Name = "Node0";
-            treeNode20.NodeFont = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            treeNode20.Text = "Мени Амигос";
+            treeNode1.Name = "Node3";
+            treeNode1.NodeFont = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            treeNode1.Text = "Појадок";
+            treeNode2.Name = "Node4";
+            treeNode2.NodeFont = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            treeNode2.Text = "Предјадења";
+            treeNode3.Name = "Node5";
+            treeNode3.NodeFont = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            treeNode3.Text = "Салати";
+            treeNode4.Name = "Node6";
+            treeNode4.Text = "Тапас";
+            treeNode5.Name = "Node7";
+            treeNode5.Text = "Тортиљи";
+            treeNode6.Name = "Node8";
+            treeNode6.Text = "Десерти";
+            treeNode7.Name = "Node9";
+            treeNode7.Text = "Амигос специјалитети";
+            treeNode8.Name = "Node10";
+            treeNode8.Text = "Алкохолни пијалоци";
+            treeNode9.Name = "Node11";
+            treeNode9.Text = "Безалкохолни пијалоци";
+            treeNode10.Name = "Node0";
+            treeNode10.NodeFont = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            treeNode10.Text = "Мени Амигос";
             this.treeViewMenija.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode20});
+            treeNode10});
             this.treeViewMenija.Size = new System.Drawing.Size(166, 160);
             this.treeViewMenija.TabIndex = 0;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lbKontakt);
             this.groupBox1.Controls.Add(this.pictureBoxLogo);
             this.groupBox1.Controls.Add(this.labelLokacija);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.labelRabVreme);
             this.groupBox1.Controls.Add(this.label7);
@@ -165,14 +165,6 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Локација:";
             // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(190, 74);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(146, 17);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "02/3228-699";
-            // 
             // label8
             // 
             this.label8.Location = new System.Drawing.Point(190, 57);
@@ -210,7 +202,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(190, 102);
+            this.label3.Location = new System.Drawing.Point(190, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 18);
             this.label3.TabIndex = 3;
@@ -240,10 +232,10 @@
             "Chimichangas",
             "Tortilla de verduras y carne",
             "Baked enchiladas"});
-            this.listBoxStavki.Location = new System.Drawing.Point(193, 123);
+            this.listBoxStavki.Location = new System.Drawing.Point(193, 141);
             this.listBoxStavki.Name = "listBoxStavki";
             this.listBoxStavki.ScrollAlwaysVisible = true;
-            this.listBoxStavki.Size = new System.Drawing.Size(143, 220);
+            this.listBoxStavki.Size = new System.Drawing.Size(143, 202);
             this.listBoxStavki.TabIndex = 1;
             // 
             // numericUpDownKolicina
@@ -399,7 +391,17 @@
             this.labelIme.TabIndex = 0;
             this.labelIme.Text = "Fajitas";
             // 
-            // Form1
+            // lbKontakt
+            // 
+            this.lbKontakt.BackColor = System.Drawing.SystemColors.Control;
+            this.lbKontakt.FormattingEnabled = true;
+            this.lbKontakt.ItemHeight = 18;
+            this.lbKontakt.Location = new System.Drawing.Point(193, 77);
+            this.lbKontakt.Name = "lbKontakt";
+            this.lbKontakt.Size = new System.Drawing.Size(143, 40);
+            this.lbKontakt.TabIndex = 12;
+            // 
+            // FasapNaracka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -410,7 +412,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Form1";
+            this.Name = "FasapNaracka";
             this.Text = "FASAP";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
@@ -449,11 +451,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label labelImeRestoran;
         private System.Windows.Forms.Label labelRabVreme;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label labelLokacija;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.ListBox lbKontakt;
 
     }
 }

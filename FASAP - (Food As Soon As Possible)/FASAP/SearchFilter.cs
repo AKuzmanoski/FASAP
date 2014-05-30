@@ -14,9 +14,11 @@ namespace SmetkaZaNaracka
     {
         Font fnt;
         List<PictureBox> lista;
-        public SearchFilter()
+        private List<Restoran> Restorani { get; set; }
+        public SearchFilter(List<Restoran> restorani)
         {
             InitializeComponent();
+            Restorani = restorani;
         }
 
         private void SearchFilter_Load(object sender, EventArgs e)
@@ -32,7 +34,10 @@ namespace SmetkaZaNaracka
             lista.Add(pictureBox5);
             lista.Add(pictureBox6);
 
-            Restoran restoran = new Restoran();
+
+            foreach (var obj in Restorani)
+                lbRestorani.Items.Add(obj);
+            /*Restoran restoran = new Restoran();
             restoran.RestoranID = 1;
             restoran.Ime = "Гостилница Лира";
             restoran.Ulica = "Никола Теслa бр.11";
@@ -79,7 +84,7 @@ namespace SmetkaZaNaracka
             restoran.BrojMasi = 25;
             restoran.Kapacitet = 100;
             restoran.Rejting = 7.3;
-            lbRestorani.Items.Add(restoran);
+            lbRestorani.Items.Add(restoran);*/
             postaviRejting(0);
         }
 
@@ -168,6 +173,13 @@ namespace SmetkaZaNaracka
                 textBox1.ForeColor = SystemColors.InactiveCaption;
                 pictureBox1.BackColor = SystemColors.InactiveBorder;
             }
+        }
+
+        private void lbRestorani_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            var obj = (Restoran)lbRestorani.SelectedItem;
+            FasapNaracka fasapNaracka = new FasapNaracka(obj);
+            fasapNaracka.Show();
         }
     }
 }

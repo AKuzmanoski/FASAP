@@ -261,6 +261,7 @@
             this.lbRestorani.Size = new System.Drawing.Size(157, 202);
             this.lbRestorani.TabIndex = 0;
             this.lbRestorani.SelectedIndexChanged += new System.EventHandler(this.lbRestorani_SelectedIndexChanged);
+            this.lbRestorani.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbRestorani_MouseDoubleClick);
             // 
             // tbUlica
             // 
