@@ -25,3 +25,14 @@ C:\Users\User\Desktop\PROEKT\AplikacijaVS10\FASAP - Ekrani\SmetkaZaNaracka\obj\x
 C:\Users\User\Desktop\PROEKT\AplikacijaVS10\FASAP - Ekrani\SmetkaZaNaracka\obj\x86\Debug\SmetkaZaNaracka.Properties.Resources.resources
 C:\Users\User\Desktop\PROEKT\AplikacijaVS10\FASAP - Ekrani\SmetkaZaNaracka\obj\x86\Debug\SmetkaZaNaracka.SearchFilter.resources
 C:\Users\User\Desktop\PROEKT\AplikacijaVS10\FASAP - Ekrani\SmetkaZaNaracka\obj\x86\Debug\SmetkaZaNaracka.csproj.GenerateResource.Cache
+C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.exe
+C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.pdb
+C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.csprojResolveAssemblyReference.cache
+C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.Form1.resources
+C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.FasapPocetenEkran.resources
+C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.Properties.Resources.resources
+C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.SearchFilter.resources
+C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.csproj.GenerateResource.Cache
+C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\bin\Debug\SmetkaZaNaracka.exe
+C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\bin\Debug\SmetkaZaNaracka.pdb
+C:\Users\Angela\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\Manager.Manager.resources

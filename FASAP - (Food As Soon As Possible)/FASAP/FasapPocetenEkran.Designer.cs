@@ -249,6 +249,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FasapPocetenEkran";
             this.Text = "Food As Soon As Possible";
+            this.Load += new System.EventHandler(this.FasapPocetenEkran_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
