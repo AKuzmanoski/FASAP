@@ -22,6 +22,7 @@ namespace SmetkaZaNaracka
         public string Kategorija { get; set; }
         public double Rejting { get; set; }
         public List<Telefon> Kontakt { get; set; }
+        public MenuComponent GlavnoMeni { get; set; }
 
         public Restoran()
         {
