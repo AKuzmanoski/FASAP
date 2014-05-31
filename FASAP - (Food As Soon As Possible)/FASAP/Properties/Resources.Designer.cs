@@ -73,6 +73,26 @@ namespace SmetkaZaNaracka.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ExitDark {
+            get {
+                object obj = ResourceManager.GetObject("ExitDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ExitLight {
+            get {
+                object obj = ResourceManager.GetObject("ExitLight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FASAP_LOGO {
             get {
                 object obj = ResourceManager.GetObject("FASAP-LOGO", resourceCulture);
@@ -86,6 +106,36 @@ namespace SmetkaZaNaracka.Properties {
         internal static System.Drawing.Bitmap FasapBackground {
             get {
                 object obj = ResourceManager.GetObject("FasapBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FasapBackground12 {
+            get {
+                object obj = ResourceManager.GetObject("FasapBackground12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MinimizeDarkLeft {
+            get {
+                object obj = ResourceManager.GetObject("MinimizeDarkLeft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MinimizeLightLeft {
+            get {
+                object obj = ResourceManager.GetObject("MinimizeLightLeft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

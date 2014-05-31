@@ -15,7 +15,8 @@ namespace SmetkaZaNaracka
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FasapPocetenEkran());
+            //Application.Run(new FasapPocetenEkran());
+            Application.Run(new BackgroundForm());
         }
     }
 }
