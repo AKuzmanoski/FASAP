@@ -7,17 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SmetkaZaNaracka.Properties;
+using Oracle.DataAccess.Client;
 
 namespace SmetkaZaNaracka
 {
     public partial class SearchFilter : Form
     {
+        public OracleConnection Conn { get; set; }
         Font fnt;
         List<PictureBox> lista;
         private List<Restoran> Restorani { get; set; }
-        public SearchFilter(List<Restoran> restorani)
+        public SearchFilter(List<Restoran> restorani, OracleConnection conn)
         {
             InitializeComponent();
+            Conn = conn;
             Restorani = restorani;
         }
 
@@ -178,7 +181,7 @@ namespace SmetkaZaNaracka
         private void lbRestorani_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             var obj = (Restoran)lbRestorani.SelectedItem;
-            FasapNaracka fasapNaracka = new FasapNaracka(obj);
+            FasapNaracka fasapNaracka = new FasapNaracka(obj, Conn);
             fasapNaracka.Show();
         }
     }

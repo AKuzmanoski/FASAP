@@ -13,6 +13,7 @@ namespace SmetkaZaNaracka
     public partial class FasapPocetenEkran : Form
     {
         private List<Restoran> Restorani { get; set; }
+        private OracleConnection Conn { get; set; }
 
         public FasapPocetenEkran()
         {
@@ -23,7 +24,7 @@ namespace SmetkaZaNaracka
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SearchFilter sf = new SearchFilter(Restorani);
+            SearchFilter sf = new SearchFilter(Restorani, Conn);
             sf.ShowDialog();
         }
 
@@ -34,13 +35,13 @@ namespace SmetkaZaNaracka
              + "(CONNECT_DATA=(SERVICE_NAME=ORCL)));"
              + "User Id=DBA_20132014L_GRP_020;Password=7734924;";
 
-            OracleConnection conn = new OracleConnection();
-            conn.ConnectionString = oradb;
+            Conn = new OracleConnection();
+            Conn.ConnectionString = oradb;
 
-            conn.Open();
+            Conn.Open();
 
             string sql = "SELECT IME_RESTORAN, ONLINE_SMETKI, KLIENTI FROM ( SELECT R.IME_RESTORAN, G.SMETKI ONLINE_SMETKI, G.KLIENTI FROM RESTORAN R JOIN ( SELECT RES.RESTORAN_ID, COUNT(ONL.RESTORAN_ID) AS SMETKI, COUNT(DISTINCT ONL.IME_KLIENT || ONL.PREZIME_KLIENT || ADRESA_ZA_DOSTAVA) AS KLIENTI FROM RESTORAN RES LEFT OUTER JOIN NARACHKA NAR ON RES.RESTORAN_ID = NAR.RESTORAN_ID AND MONTHS_BETWEEN(SYSDATE, NAR.VREME) <= 1 LEFT OUTER JOIN ONLINE_NARACHKA ONL ON NAR.RESTORAN_ID = ONL.RESTORAN_ID AND NAR.NARACHKA_ID = ONL.NARACHKA_ID GROUP BY RES.RESTORAN_ID ) G ON R.RESTORAN_ID = G.RESTORAN_ID ORDER BY G.SMETKI DESC, G.KLIENTI DESC, R.IME_RESTORAN ASC ) WHERE ROWNUM <= 5"; // C#
-            OracleCommand cmd = new OracleCommand(sql, conn);
+            OracleCommand cmd = new OracleCommand(sql, Conn);
             cmd.CommandType = CommandType.Text;
 
             OracleDataReader dr = cmd.ExecuteReader(); // C#
@@ -52,21 +53,21 @@ namespace SmetkaZaNaracka
             }
 
             sql = "Select distinct KATEGORIJA from RESTORAN ORDER BY KATEGORIJA"; // C#
-            cmd = new OracleCommand(sql, conn);
+            cmd = new OracleCommand(sql, Conn);
             cmd.CommandType = CommandType.Text;
             dr = cmd.ExecuteReader();
             while (dr.Read())
                 lbKategorija.Items.Add(dr.GetString(0));
 
             sql = "Select distinct GRAD from RESTORAN ORDER BY GRAD"; // C#
-            cmd = new OracleCommand(sql, conn);
+            cmd = new OracleCommand(sql, Conn);
             cmd.CommandType = CommandType.Text;
             dr = cmd.ExecuteReader();
             while (dr.Read())
                 lbGrad.Items.Add(dr.GetString(0));
 
             sql = "Select * from RESTORAN"; // C#
-            cmd = new OracleCommand(sql, conn);
+            cmd = new OracleCommand(sql, Conn);
             cmd.CommandType = CommandType.Text;
             dr = cmd.ExecuteReader();
             Restoran res;
@@ -90,7 +91,7 @@ namespace SmetkaZaNaracka
             }
 
             sql = "Select * from IMENIK"; // C#
-            cmd = new OracleCommand(sql, conn);
+            cmd = new OracleCommand(sql, Conn);
             cmd.CommandType = CommandType.Text;
             dr = cmd.ExecuteReader();
 
@@ -103,7 +104,7 @@ namespace SmetkaZaNaracka
         private void lbRestorani_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             var obj = (Restoran)lbRestorani.SelectedItem;
-            FasapNaracka fasapNaracka = new FasapNaracka(obj);
+            FasapNaracka fasapNaracka = new FasapNaracka(obj, Conn);
             fasapNaracka.Show();
         }
     }

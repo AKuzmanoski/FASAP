@@ -28,27 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Појадок");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Предјадења");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Салати");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Тапас");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Тортиљи");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Десерти");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Амигос специјалитети");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Алкохолни пијалоци");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Безалкохолни пијалоци");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Мени Амигос", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6,
-            treeNode7,
-            treeNode8,
-            treeNode9});
-            this.treeViewMenija = new System.Windows.Forms.TreeView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lbMenus = new System.Windows.Forms.ListBox();
+            this.lbKontakt = new System.Windows.Forms.ListBox();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.labelLokacija = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -73,7 +55,6 @@
             this.labelCena = new System.Windows.Forms.Label();
             this.labelOpis = new System.Windows.Forms.Label();
             this.labelIme = new System.Windows.Forms.Label();
-            this.lbKontakt = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKolicina)).BeginInit();
@@ -81,42 +62,9 @@
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // treeViewMenija
-            // 
-            this.treeViewMenija.Indent = 12;
-            this.treeViewMenija.Location = new System.Drawing.Point(15, 183);
-            this.treeViewMenija.Name = "treeViewMenija";
-            treeNode1.Name = "Node3";
-            treeNode1.NodeFont = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            treeNode1.Text = "Појадок";
-            treeNode2.Name = "Node4";
-            treeNode2.NodeFont = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            treeNode2.Text = "Предјадења";
-            treeNode3.Name = "Node5";
-            treeNode3.NodeFont = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            treeNode3.Text = "Салати";
-            treeNode4.Name = "Node6";
-            treeNode4.Text = "Тапас";
-            treeNode5.Name = "Node7";
-            treeNode5.Text = "Тортиљи";
-            treeNode6.Name = "Node8";
-            treeNode6.Text = "Десерти";
-            treeNode7.Name = "Node9";
-            treeNode7.Text = "Амигос специјалитети";
-            treeNode8.Name = "Node10";
-            treeNode8.Text = "Алкохолни пијалоци";
-            treeNode9.Name = "Node11";
-            treeNode9.Text = "Безалкохолни пијалоци";
-            treeNode10.Name = "Node0";
-            treeNode10.NodeFont = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            treeNode10.Text = "Мени Амигос";
-            this.treeViewMenija.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode10});
-            this.treeViewMenija.Size = new System.Drawing.Size(166, 160);
-            this.treeViewMenija.TabIndex = 0;
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lbMenus);
             this.groupBox1.Controls.Add(this.lbKontakt);
             this.groupBox1.Controls.Add(this.pictureBoxLogo);
             this.groupBox1.Controls.Add(this.labelLokacija);
@@ -128,7 +76,6 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.listBoxStavki);
-            this.groupBox1.Controls.Add(this.treeViewMenija);
             this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -136,6 +83,27 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Понуда";
+            // 
+            // lbMenus
+            // 
+            this.lbMenus.FormattingEnabled = true;
+            this.lbMenus.ItemHeight = 18;
+            this.lbMenus.Location = new System.Drawing.Point(15, 184);
+            this.lbMenus.Name = "lbMenus";
+            this.lbMenus.ScrollAlwaysVisible = true;
+            this.lbMenus.Size = new System.Drawing.Size(165, 148);
+            this.lbMenus.TabIndex = 13;
+            this.lbMenus.SelectedIndexChanged += new System.EventHandler(this.lbMenus_SelectedIndexChanged);
+            // 
+            // lbKontakt
+            // 
+            this.lbKontakt.BackColor = System.Drawing.SystemColors.Control;
+            this.lbKontakt.FormattingEnabled = true;
+            this.lbKontakt.ItemHeight = 18;
+            this.lbKontakt.Location = new System.Drawing.Point(193, 77);
+            this.lbKontakt.Name = "lbKontakt";
+            this.lbKontakt.Size = new System.Drawing.Size(143, 40);
+            this.lbKontakt.TabIndex = 12;
             // 
             // pictureBoxLogo
             // 
@@ -221,22 +189,12 @@
             // 
             this.listBoxStavki.FormattingEnabled = true;
             this.listBoxStavki.ItemHeight = 18;
-            this.listBoxStavki.Items.AddRange(new object[] {
-            "Burritos",
-            "Enchiladas",
-            "Nachos enchiladas",
-            "Tacos",
-            "Tacquitos",
-            "Fajitas",
-            "Tacquitos fritos",
-            "Chimichangas",
-            "Tortilla de verduras y carne",
-            "Baked enchiladas"});
             this.listBoxStavki.Location = new System.Drawing.Point(193, 141);
             this.listBoxStavki.Name = "listBoxStavki";
             this.listBoxStavki.ScrollAlwaysVisible = true;
             this.listBoxStavki.Size = new System.Drawing.Size(143, 202);
             this.listBoxStavki.TabIndex = 1;
+            this.listBoxStavki.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBoxStavki_MouseDoubleClick);
             // 
             // numericUpDownKolicina
             // 
@@ -267,15 +225,12 @@
             this.buttonDodajVoNaracka.TabIndex = 4;
             this.buttonDodajVoNaracka.Text = ">>";
             this.buttonDodajVoNaracka.UseVisualStyleBackColor = true;
+            this.buttonDodajVoNaracka.Click += new System.EventHandler(this.buttonDodajVoNaracka_Click);
             // 
             // listBoxNaracano
             // 
             this.listBoxNaracano.FormattingEnabled = true;
             this.listBoxNaracano.ItemHeight = 18;
-            this.listBoxNaracano.Items.AddRange(new object[] {
-            "Caesar Shrimp 1 x 390 ... 390 ден.",
-            "Quesadilla 2 x 90 ... 180 ден.",
-            "Mai Tai 2 x 230 ... 460 ден."});
             this.listBoxNaracano.Location = new System.Drawing.Point(131, 46);
             this.listBoxNaracano.Name = "listBoxNaracano";
             this.listBoxNaracano.Size = new System.Drawing.Size(199, 94);
@@ -289,6 +244,7 @@
             this.buttonOtstraniOdNaracka.TabIndex = 6;
             this.buttonOtstraniOdNaracka.Text = "<<";
             this.buttonOtstraniOdNaracka.UseVisualStyleBackColor = true;
+            this.buttonOtstraniOdNaracka.Click += new System.EventHandler(this.buttonOtstraniOdNaracka_Click);
             // 
             // groupBox2
             // 
@@ -391,16 +347,6 @@
             this.labelIme.TabIndex = 0;
             this.labelIme.Text = "Fajitas";
             // 
-            // lbKontakt
-            // 
-            this.lbKontakt.BackColor = System.Drawing.SystemColors.Control;
-            this.lbKontakt.FormattingEnabled = true;
-            this.lbKontakt.ItemHeight = 18;
-            this.lbKontakt.Location = new System.Drawing.Point(193, 77);
-            this.lbKontakt.Name = "lbKontakt";
-            this.lbKontakt.Size = new System.Drawing.Size(143, 40);
-            this.lbKontakt.TabIndex = 12;
-            // 
             // FasapNaracka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -415,6 +361,7 @@
             this.Name = "FasapNaracka";
             this.Text = "FASAP";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.FasapNaracka_Paint);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
@@ -429,7 +376,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TreeView treeViewMenija;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListBox listBoxStavki;
         private System.Windows.Forms.Label label3;
@@ -456,6 +402,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.ListBox lbKontakt;
+        private System.Windows.Forms.ListBox lbMenus;
 
     }
 }

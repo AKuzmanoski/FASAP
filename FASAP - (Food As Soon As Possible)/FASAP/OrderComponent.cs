@@ -12,7 +12,7 @@ namespace SmetkaZaNaracka
 
         public OrderComponent(MenuComponent i, int q = 1)
         {
-            this.Item = i;
+            Item = i;
             this.Quantity = q;
         }
 
@@ -26,10 +26,19 @@ namespace SmetkaZaNaracka
             this.Quantity--;
         }
 
-        //not implemented
         public int ComputePrice()
         {
-            return 0;
+            return Item.ComputeCost() * Quantity;
         }
+
+        public string GetName()
+        {
+            return String.Format("{0} x{1}", Item.GetName(), Quantity);
+        }
+
+        public override string ToString()
+        {
+            return String.Format("{0}\t{1}", this.GetName(), this.ComputePrice());
+        }
     }
 }
