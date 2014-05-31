@@ -73,6 +73,56 @@ namespace SmetkaZaNaracka.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DarkArrowDown {
+            get {
+                object obj = ResourceManager.GetObject("DarkArrowDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DarkArrowLeft {
+            get {
+                object obj = ResourceManager.GetObject("DarkArrowLeft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DarkArrowRight {
+            get {
+                object obj = ResourceManager.GetObject("DarkArrowRight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DarkArrowUp {
+            get {
+                object obj = ResourceManager.GetObject("DarkArrowUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DarkButton {
+            get {
+                object obj = ResourceManager.GetObject("DarkButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ExitDark {
             get {
                 object obj = ResourceManager.GetObject("ExitDark", resourceCulture);
@@ -116,6 +166,56 @@ namespace SmetkaZaNaracka.Properties {
         internal static System.Drawing.Bitmap FasapBackground12 {
             get {
                 object obj = ResourceManager.GetObject("FasapBackground12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LightArrowDown {
+            get {
+                object obj = ResourceManager.GetObject("LightArrowDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LightArrowLeft {
+            get {
+                object obj = ResourceManager.GetObject("LightArrowLeft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LightArrowRight___Copy {
+            get {
+                object obj = ResourceManager.GetObject("LightArrowRight___Copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LightArrowUp {
+            get {
+                object obj = ResourceManager.GetObject("LightArrowUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LightButton___Copy {
+            get {
+                object obj = ResourceManager.GetObject("LightButton___Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

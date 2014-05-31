@@ -126,6 +126,12 @@
     <Compile Include="IzvrsuvanjeNaracka.Designer.cs">
       <DependentUpon>IzvrsuvanjeNaracka.cs</DependentUpon>
     </Compile>
+    <Compile Include="LabelFASAP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LabelFASAP.Designer.cs">
+      <DependentUpon>LabelFASAP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +227,16 @@
     <None Include="Resources\MinimizeDarkLeft.png" />
     <None Include="Resources\MinimizeLightLeft.png" />
     <None Include="Resources\FasapBackground12.jpg" />
+    <None Include="Resources\DarkArrowDown.png" />
+    <None Include="Resources\DarkArrowLeft.png" />
+    <None Include="Resources\DarkArrowRight.png" />
+    <None Include="Resources\DarkArrowUp.png" />
+    <None Include="Resources\DarkButton.png" />
+    <None Include="Resources\LightArrowDown.png" />
+    <None Include="Resources\LightArrowLeft.png" />
+    <None Include="Resources\LightArrowRight - Copy.png" />
+    <None Include="Resources\LightArrowUp.png" />
+    <None Include="Resources\LightButton - Copy.png" />
     <Content Include="Resources\Resized-HTAHM.png" />
     <None Include="Resources\Resized-HTAHM1.png" />
   </ItemGroup>

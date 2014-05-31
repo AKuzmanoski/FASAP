@@ -31,7 +31,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lbMenus = new System.Windows.Forms.ListBox();
             this.lbKontakt = new System.Windows.Forms.ListBox();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.labelLokacija = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -55,11 +54,12 @@
             this.labelCena = new System.Windows.Forms.Label();
             this.labelOpis = new System.Windows.Forms.Label();
             this.labelIme = new System.Windows.Forms.Label();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKolicina)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -104,17 +104,6 @@
             this.lbKontakt.Name = "lbKontakt";
             this.lbKontakt.Size = new System.Drawing.Size(143, 40);
             this.lbKontakt.TabIndex = 12;
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxLogo.Image = global::SmetkaZaNaracka.Properties.Resources.restoran_amigos_skopje_logo;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(16, 51);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(75, 47);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 11;
-            this.pictureBoxLogo.TabStop = false;
             // 
             // labelLokacija
             // 
@@ -347,6 +336,17 @@
             this.labelIme.TabIndex = 0;
             this.labelIme.Text = "Fajitas";
             // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxLogo.Image = global::SmetkaZaNaracka.Properties.Resources.restoran_amigos_skopje_logo;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(16, 51);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(75, 47);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 11;
+            this.pictureBoxLogo.TabStop = false;
+            // 
             // FasapNaracka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,12 +364,12 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.FasapNaracka_Paint);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKolicina)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
