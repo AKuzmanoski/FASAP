@@ -16,7 +16,6 @@ namespace SmetkaZaNaracka
         {
             InitializeComponent();
             this.DoubleBuffered = true;
-            //this.BackgroundImage = Resources.FasapBackground12;
             this.pictureBox1.Image = Resources.MinimizeDarkLeft;
             this.pictureBox2.Image = Resources.ExitDark;
         }
@@ -50,12 +49,5 @@ namespace SmetkaZaNaracka
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        /*
-        private void label1_Resize(object sender, EventArgs e)
-        {
-            Font f = new Font("Calibri", (float)tableLayoutPanel1.Height / 4);
-            //this.label1.Font = new Font("Calibri", (float)label1.Font.Size * 1.5f); ;
-            this.label1.Font = new Font("Calibri", (float)label1.Height * 0.2f);
-        }*/
     }
 }
