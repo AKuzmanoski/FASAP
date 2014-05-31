@@ -28,3 +28,5 @@ C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\
 C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\bin\Debug\SmetkaZaNaracka.pdb
 C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.BackgroundForm.resources
 C:\Users\Viktor\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.IzvrsuvanjeNaracka.resources
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.BackgroundForm.resources
+C:\Users\User\Documents\GitHub\FASAP\FASAP - (Food As Soon As Possible)\FASAP\obj\x86\Debug\SmetkaZaNaracka.IzvrsuvanjeNaracka.resources

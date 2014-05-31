@@ -227,6 +227,8 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
+            this.pictureBox4.MouseLeave += new System.EventHandler(this.pictureBox4_MouseLeave);
             // 
             // pictureBox5
             // 
@@ -238,6 +240,8 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.MouseEnter += new System.EventHandler(this.pictureBox5_MouseEnter);
+            this.pictureBox5.MouseLeave += new System.EventHandler(this.pictureBox5_MouseLeave);
             // 
             // labelFASAP4
             // 
@@ -376,6 +380,8 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.MouseEnter += new System.EventHandler(this.pictureBox6_MouseEnter);
+            this.pictureBox6.MouseLeave += new System.EventHandler(this.pictureBox6_MouseLeave);
             // 
             // pictureBox7
             // 
@@ -387,6 +393,8 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 1;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.MouseEnter += new System.EventHandler(this.pictureBox7_MouseEnter);
+            this.pictureBox7.MouseLeave += new System.EventHandler(this.pictureBox7_MouseLeave);
             // 
             // dbLayoutPanel3
             // 
@@ -426,6 +434,8 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 25;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.MouseEnter += new System.EventHandler(this.pictureBox7_MouseEnter);
+            this.pictureBox9.MouseLeave += new System.EventHandler(this.pictureBox7_MouseLeave);
             // 
             // lblStavka6
             // 
@@ -521,6 +531,8 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 2;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.MouseEnter += new System.EventHandler(this.pictureBox6_MouseEnter);
+            this.pictureBox8.MouseLeave += new System.EventHandler(this.pictureBox6_MouseLeave);
             // 
             // labelFASAP5
             // 
@@ -596,6 +608,8 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 22;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.MouseEnter += new System.EventHandler(this.pictureBox6_MouseEnter);
+            this.pictureBox10.MouseLeave += new System.EventHandler(this.pictureBox6_MouseLeave);
             // 
             // pictureBox11
             // 
@@ -607,6 +621,8 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 23;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.MouseEnter += new System.EventHandler(this.pictureBox7_MouseEnter);
+            this.pictureBox11.MouseLeave += new System.EventHandler(this.pictureBox7_MouseLeave);
             // 
             // pictureBox12
             // 
@@ -618,6 +634,8 @@
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 24;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.MouseEnter += new System.EventHandler(this.pictureBox12_MouseEnter);
+            this.pictureBox12.MouseLeave += new System.EventHandler(this.pictureBox12_MouseLeave);
             // 
             // pictureBox14
             // 
@@ -629,6 +647,8 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 26;
             this.pictureBox14.TabStop = false;
+            this.pictureBox14.MouseEnter += new System.EventHandler(this.pictureBox12_MouseEnter);
+            this.pictureBox14.MouseLeave += new System.EventHandler(this.pictureBox12_MouseLeave);
             // 
             // pictureBox13
             // 
@@ -640,6 +660,8 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 28;
             this.pictureBox13.TabStop = false;
+            this.pictureBox13.MouseEnter += new System.EventHandler(this.pictureBox15_MouseEnter);
+            this.pictureBox13.MouseLeave += new System.EventHandler(this.pictureBox15_MouseLeave);
             // 
             // pictureBox15
             // 
@@ -651,6 +673,8 @@
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox15.TabIndex = 27;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.MouseEnter += new System.EventHandler(this.pictureBox15_MouseEnter);
+            this.pictureBox15.MouseLeave += new System.EventHandler(this.pictureBox15_MouseLeave);
             // 
             // dbLayoutPanel4
             // 
@@ -690,6 +714,8 @@
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 25;
             this.pictureBox16.TabStop = false;
+            this.pictureBox16.MouseEnter += new System.EventHandler(this.pictureBox7_MouseEnter);
+            this.pictureBox16.MouseLeave += new System.EventHandler(this.pictureBox7_MouseLeave);
             // 
             // labelFASAP10
             // 
@@ -785,6 +811,8 @@
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox17.TabIndex = 2;
             this.pictureBox17.TabStop = false;
+            this.pictureBox17.MouseEnter += new System.EventHandler(this.pictureBox6_MouseEnter);
+            this.pictureBox17.MouseLeave += new System.EventHandler(this.pictureBox6_MouseLeave);
             // 
             // lblCena
             // 
