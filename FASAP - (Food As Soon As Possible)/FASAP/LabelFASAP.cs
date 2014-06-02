@@ -71,5 +71,15 @@ namespace SmetkaZaNaracka
             format.Alignment = StringAlignment.Center;
             e.Graphics.DrawString(this.Text, this.Font, new SolidBrush(ForeColor), rectangle, format);
         }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
