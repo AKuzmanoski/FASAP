@@ -58,13 +58,14 @@ namespace SmetkaZaNaracka
         protected override void OnPaint(PaintEventArgs e)
         {
             // Draw image, sized to control
+            RectangleF rectangle = new RectangleF(0, 0, this.Width, this.Height);
             if (this.Image != null)
             {
-                e.Graphics.DrawImage(this.Image, 0, 0, this.Width, this.Height);
+                e.Graphics.DrawImage(this.Image, rectangle);
             }
 
             // Draw text, centered vertically and horizontally
-            RectangleF rectangle = new RectangleF(0, 0, this.Width, this.Height);
+            
             StringFormat format = new StringFormat();
             format.LineAlignment = StringAlignment.Center;
             format.Alignment = StringAlignment.Center;

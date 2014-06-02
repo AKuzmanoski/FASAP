@@ -15,7 +15,7 @@ namespace SmetkaZaNaracka
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new IzvrsuvanjeNaracka());
+            Application.Run(new FasapPocetenEkran());
         }
     }
 }

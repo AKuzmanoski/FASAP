@@ -20,6 +20,11 @@ namespace SmetkaZaNaracka
             Cena = (int)cena;
         }
 
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
         public override string GetDescription()
         {
             return Opis;

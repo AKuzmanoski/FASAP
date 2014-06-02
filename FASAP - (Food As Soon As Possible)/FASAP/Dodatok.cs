@@ -13,6 +13,11 @@ namespace SmetkaZaNaracka
             : base(id, ime, cena, opis)
         { }
 
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
         public override int ComputeCost()
         {
             return base.ComputeCost() + Osnovna.ComputeCost();
