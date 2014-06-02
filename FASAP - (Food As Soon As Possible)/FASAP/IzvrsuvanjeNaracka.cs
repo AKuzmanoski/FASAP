@@ -7,11 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SmetkaZaNaracka.Properties;
+using Oracle.DataAccess.Client;
 
 namespace SmetkaZaNaracka
 {
     public partial class IzvrsuvanjeNaracka : BackgroundForm
     {
+        private MenuComponent CurrComponent { get; set; }
+        private OracleConnection Conn { get; set; }
+        private Restoran Restoran { get; set; }
+        public IzvrsuvanjeNaracka(Restoran restoran, OracleConnection conn)
+        {
+            InitializeComponent();
+            Restoran = restoran;
+            Conn = conn;
+        }
+
         public IzvrsuvanjeNaracka()
         {
             InitializeComponent();
@@ -89,5 +100,9 @@ namespace SmetkaZaNaracka
             pictureBox13.Image = Resources.DarkArrowLeft;
         }
 
+        private void IzvrsuvanjeNaracka_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

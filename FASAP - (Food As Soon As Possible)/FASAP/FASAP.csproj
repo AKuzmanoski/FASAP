@@ -237,6 +237,9 @@
     <None Include="Resources\LightArrowRight - Copy.png" />
     <None Include="Resources\LightArrowUp.png" />
     <None Include="Resources\LightButton - Copy.png" />
+    <None Include="Resources\LabelBackground.png" />
+    <None Include="Resources\LabelBackground1.png" />
+    <None Include="Resources\LabelBackground2.png" />
     <Content Include="Resources\Resized-HTAHM.png" />
     <None Include="Resources\Resized-HTAHM1.png" />
   </ItemGroup>

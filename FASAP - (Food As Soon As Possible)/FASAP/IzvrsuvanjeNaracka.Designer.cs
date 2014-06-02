@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IzvrsuvanjeNaracka));
             this.dbLayoutPanel1 = new SmetkaZaNaracka.DBLayoutPanel(this.components);
             this.lblImeRestoran = new SmetkaZaNaracka.LabelFASAP(this.components);
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -120,6 +121,7 @@
             this.lblImeRestoran.BackColor = System.Drawing.Color.Transparent;
             this.lblImeRestoran.Font = new System.Drawing.Font("Trebuchet MS", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblImeRestoran.ForeColor = System.Drawing.Color.White;
+            this.lblImeRestoran.Image = ((System.Drawing.Image)(resources.GetObject("lblImeRestoran.Image")));
             this.lblImeRestoran.LblObject = null;
             this.lblImeRestoran.Location = new System.Drawing.Point(43, 64);
             this.lblImeRestoran.Name = "lblImeRestoran";
@@ -145,6 +147,7 @@
             this.labelFASAP1.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP1.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP1.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP1.Image")));
             this.labelFASAP1.LblObject = null;
             this.labelFASAP1.Location = new System.Drawing.Point(47, 216);
             this.labelFASAP1.Name = "labelFASAP1";
@@ -158,6 +161,7 @@
             this.lblAdresa.BackColor = System.Drawing.Color.Transparent;
             this.lblAdresa.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblAdresa.ForeColor = System.Drawing.Color.White;
+            this.lblAdresa.Image = ((System.Drawing.Image)(resources.GetObject("lblAdresa.Image")));
             this.lblAdresa.LblObject = null;
             this.lblAdresa.Location = new System.Drawing.Point(47, 251);
             this.lblAdresa.Name = "lblAdresa";
@@ -171,6 +175,7 @@
             this.lblRabVreme.BackColor = System.Drawing.Color.Transparent;
             this.lblRabVreme.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblRabVreme.ForeColor = System.Drawing.Color.White;
+            this.lblRabVreme.Image = ((System.Drawing.Image)(resources.GetObject("lblRabVreme.Image")));
             this.lblRabVreme.LblObject = null;
             this.lblRabVreme.Location = new System.Drawing.Point(413, 157);
             this.lblRabVreme.Name = "lblRabVreme";
@@ -184,6 +189,7 @@
             this.labelFASAP3.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP3.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP3.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP3.Image")));
             this.labelFASAP3.LblObject = null;
             this.labelFASAP3.Location = new System.Drawing.Point(413, 122);
             this.labelFASAP3.Name = "labelFASAP3";
@@ -197,6 +203,7 @@
             this.labelFASAP2.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP2.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP2.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP2.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP2.Image")));
             this.labelFASAP2.LblObject = null;
             this.labelFASAP2.Location = new System.Drawing.Point(413, 203);
             this.labelFASAP2.Name = "labelFASAP2";
@@ -210,6 +217,7 @@
             this.lblKontakt.BackColor = System.Drawing.Color.Transparent;
             this.lblKontakt.Font = new System.Drawing.Font("Trebuchet MS", 16F, System.Drawing.FontStyle.Bold);
             this.lblKontakt.ForeColor = System.Drawing.Color.White;
+            this.lblKontakt.Image = ((System.Drawing.Image)(resources.GetObject("lblKontakt.Image")));
             this.lblKontakt.LblObject = null;
             this.lblKontakt.Location = new System.Drawing.Point(413, 230);
             this.lblKontakt.Name = "lblKontakt";
@@ -249,6 +257,7 @@
             this.labelFASAP4.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP4.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP4.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP4.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP4.Image")));
             this.labelFASAP4.LblObject = null;
             this.labelFASAP4.Location = new System.Drawing.Point(47, 317);
             this.labelFASAP4.Name = "labelFASAP4";
@@ -293,6 +302,7 @@
             this.lblMeni6.BackColor = System.Drawing.Color.Transparent;
             this.lblMeni6.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblMeni6.ForeColor = System.Drawing.Color.Gold;
+            this.lblMeni6.Image = ((System.Drawing.Image)(resources.GetObject("lblMeni6.Image")));
             this.lblMeni6.LblObject = null;
             this.lblMeni6.Location = new System.Drawing.Point(117, 305);
             this.lblMeni6.Name = "lblMeni6";
@@ -307,6 +317,7 @@
             this.lblMeni5.BackColor = System.Drawing.Color.Transparent;
             this.lblMeni5.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblMeni5.ForeColor = System.Drawing.Color.Gold;
+            this.lblMeni5.Image = ((System.Drawing.Image)(resources.GetObject("lblMeni5.Image")));
             this.lblMeni5.LblObject = null;
             this.lblMeni5.Location = new System.Drawing.Point(117, 256);
             this.lblMeni5.Name = "lblMeni5";
@@ -321,6 +332,7 @@
             this.lblMeni4.BackColor = System.Drawing.Color.Transparent;
             this.lblMeni4.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblMeni4.ForeColor = System.Drawing.Color.Gold;
+            this.lblMeni4.Image = ((System.Drawing.Image)(resources.GetObject("lblMeni4.Image")));
             this.lblMeni4.LblObject = null;
             this.lblMeni4.Location = new System.Drawing.Point(117, 207);
             this.lblMeni4.Name = "lblMeni4";
@@ -335,6 +347,7 @@
             this.lblMeni3.BackColor = System.Drawing.Color.Transparent;
             this.lblMeni3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblMeni3.ForeColor = System.Drawing.Color.Gold;
+            this.lblMeni3.Image = ((System.Drawing.Image)(resources.GetObject("lblMeni3.Image")));
             this.lblMeni3.LblObject = null;
             this.lblMeni3.Location = new System.Drawing.Point(40, 158);
             this.lblMeni3.Name = "lblMeni3";
@@ -349,6 +362,7 @@
             this.lblMeni2.BackColor = System.Drawing.Color.Transparent;
             this.lblMeni2.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblMeni2.ForeColor = System.Drawing.Color.Gold;
+            this.lblMeni2.Image = ((System.Drawing.Image)(resources.GetObject("lblMeni2.Image")));
             this.lblMeni2.LblObject = null;
             this.lblMeni2.Location = new System.Drawing.Point(20, 109);
             this.lblMeni2.Name = "lblMeni2";
@@ -363,6 +377,7 @@
             this.lblMeni1.BackColor = System.Drawing.Color.Transparent;
             this.lblMeni1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblMeni1.ForeColor = System.Drawing.Color.Gold;
+            this.lblMeni1.Image = ((System.Drawing.Image)(resources.GetObject("lblMeni1.Image")));
             this.lblMeni1.LblObject = null;
             this.lblMeni1.Location = new System.Drawing.Point(24, 60);
             this.lblMeni1.Name = "lblMeni1";
@@ -444,6 +459,7 @@
             this.lblStavka6.BackColor = System.Drawing.Color.Transparent;
             this.lblStavka6.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblStavka6.ForeColor = System.Drawing.Color.White;
+            this.lblStavka6.Image = ((System.Drawing.Image)(resources.GetObject("lblStavka6.Image")));
             this.lblStavka6.LblObject = null;
             this.lblStavka6.Location = new System.Drawing.Point(121, 305);
             this.lblStavka6.Name = "lblStavka6";
@@ -458,6 +474,7 @@
             this.lblStavka5.BackColor = System.Drawing.Color.Transparent;
             this.lblStavka5.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblStavka5.ForeColor = System.Drawing.Color.White;
+            this.lblStavka5.Image = ((System.Drawing.Image)(resources.GetObject("lblStavka5.Image")));
             this.lblStavka5.LblObject = null;
             this.lblStavka5.Location = new System.Drawing.Point(121, 256);
             this.lblStavka5.Name = "lblStavka5";
@@ -472,6 +489,7 @@
             this.lblStavka4.BackColor = System.Drawing.Color.Transparent;
             this.lblStavka4.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblStavka4.ForeColor = System.Drawing.Color.White;
+            this.lblStavka4.Image = ((System.Drawing.Image)(resources.GetObject("lblStavka4.Image")));
             this.lblStavka4.LblObject = null;
             this.lblStavka4.Location = new System.Drawing.Point(121, 207);
             this.lblStavka4.Name = "lblStavka4";
@@ -486,6 +504,7 @@
             this.lblStavka3.BackColor = System.Drawing.Color.Transparent;
             this.lblStavka3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblStavka3.ForeColor = System.Drawing.Color.White;
+            this.lblStavka3.Image = ((System.Drawing.Image)(resources.GetObject("lblStavka3.Image")));
             this.lblStavka3.LblObject = null;
             this.lblStavka3.Location = new System.Drawing.Point(121, 158);
             this.lblStavka3.Name = "lblStavka3";
@@ -500,6 +519,7 @@
             this.lblStavka2.BackColor = System.Drawing.Color.Transparent;
             this.lblStavka2.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblStavka2.ForeColor = System.Drawing.Color.Gold;
+            this.lblStavka2.Image = ((System.Drawing.Image)(resources.GetObject("lblStavka2.Image")));
             this.lblStavka2.LblObject = null;
             this.lblStavka2.Location = new System.Drawing.Point(121, 109);
             this.lblStavka2.Name = "lblStavka2";
@@ -514,6 +534,7 @@
             this.lblStavka1.BackColor = System.Drawing.Color.Transparent;
             this.lblStavka1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblStavka1.ForeColor = System.Drawing.Color.Gold;
+            this.lblStavka1.Image = ((System.Drawing.Image)(resources.GetObject("lblStavka1.Image")));
             this.lblStavka1.LblObject = null;
             this.lblStavka1.Location = new System.Drawing.Point(121, 60);
             this.lblStavka1.Name = "lblStavka1";
@@ -540,6 +561,7 @@
             this.labelFASAP5.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP5.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP5.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP5.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP5.Image")));
             this.labelFASAP5.LblObject = null;
             this.labelFASAP5.Location = new System.Drawing.Point(360, 317);
             this.labelFASAP5.Name = "labelFASAP5";
@@ -552,6 +574,7 @@
             this.lblImeStavka.BackColor = System.Drawing.Color.Transparent;
             this.lblImeStavka.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblImeStavka.ForeColor = System.Drawing.Color.White;
+            this.lblImeStavka.Image = ((System.Drawing.Image)(resources.GetObject("lblImeStavka.Image")));
             this.lblImeStavka.LblObject = null;
             this.lblImeStavka.Location = new System.Drawing.Point(700, 122);
             this.lblImeStavka.Name = "lblImeStavka";
@@ -565,6 +588,7 @@
             this.lblCenaStavka.BackColor = System.Drawing.Color.Transparent;
             this.lblCenaStavka.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblCenaStavka.ForeColor = System.Drawing.Color.White;
+            this.lblCenaStavka.Image = ((System.Drawing.Image)(resources.GetObject("lblCenaStavka.Image")));
             this.lblCenaStavka.LblObject = null;
             this.lblCenaStavka.Location = new System.Drawing.Point(1178, 187);
             this.lblCenaStavka.Name = "lblCenaStavka";
@@ -578,6 +602,7 @@
             this.labelFASAP7.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP7.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP7.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP7.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP7.Image")));
             this.labelFASAP7.LblObject = null;
             this.labelFASAP7.Location = new System.Drawing.Point(703, 251);
             this.labelFASAP7.Name = "labelFASAP7";
@@ -590,6 +615,7 @@
             this.labelFASAP8.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP8.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP8.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP8.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP8.Image")));
             this.labelFASAP8.LblObject = null;
             this.labelFASAP8.Location = new System.Drawing.Point(637, 278);
             this.labelFASAP8.Name = "labelFASAP8";
@@ -724,6 +750,7 @@
             this.labelFASAP10.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP10.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP10.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP10.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP10.Image")));
             this.labelFASAP10.LblObject = null;
             this.labelFASAP10.Location = new System.Drawing.Point(164, 305);
             this.labelFASAP10.Name = "labelFASAP10";
@@ -738,6 +765,7 @@
             this.labelFASAP11.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP11.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP11.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP11.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP11.Image")));
             this.labelFASAP11.LblObject = null;
             this.labelFASAP11.Location = new System.Drawing.Point(164, 256);
             this.labelFASAP11.Name = "labelFASAP11";
@@ -752,6 +780,7 @@
             this.labelFASAP12.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP12.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP12.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP12.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP12.Image")));
             this.labelFASAP12.LblObject = null;
             this.labelFASAP12.Location = new System.Drawing.Point(164, 207);
             this.labelFASAP12.Name = "labelFASAP12";
@@ -766,6 +795,7 @@
             this.labelFASAP13.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP13.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP13.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP13.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP13.Image")));
             this.labelFASAP13.LblObject = null;
             this.labelFASAP13.Location = new System.Drawing.Point(164, 158);
             this.labelFASAP13.Name = "labelFASAP13";
@@ -780,6 +810,7 @@
             this.labelFASAP14.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP14.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP14.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP14.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP14.Image")));
             this.labelFASAP14.LblObject = null;
             this.labelFASAP14.Location = new System.Drawing.Point(164, 109);
             this.labelFASAP14.Name = "labelFASAP14";
@@ -794,6 +825,7 @@
             this.labelFASAP15.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP15.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP15.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP15.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP15.Image")));
             this.labelFASAP15.LblObject = null;
             this.labelFASAP15.Location = new System.Drawing.Point(164, 60);
             this.labelFASAP15.Name = "labelFASAP15";
@@ -819,6 +851,7 @@
             this.lblCena.BackColor = System.Drawing.Color.Transparent;
             this.lblCena.Font = new System.Drawing.Font("Trebuchet MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblCena.ForeColor = System.Drawing.Color.Khaki;
+            this.lblCena.Image = ((System.Drawing.Image)(resources.GetObject("lblCena.Image")));
             this.lblCena.LblObject = null;
             this.lblCena.Location = new System.Drawing.Point(1109, 283);
             this.lblCena.Name = "lblCena";
@@ -833,6 +866,7 @@
             this.labelFASAP16.BackColor = System.Drawing.Color.Transparent;
             this.labelFASAP16.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFASAP16.ForeColor = System.Drawing.Color.White;
+            this.labelFASAP16.Image = ((System.Drawing.Image)(resources.GetObject("labelFASAP16.Image")));
             this.labelFASAP16.LblObject = null;
             this.labelFASAP16.Location = new System.Drawing.Point(964, 297);
             this.labelFASAP16.Name = "labelFASAP16";
@@ -875,6 +909,7 @@
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "IzvrsuvanjeNaracka";
             this.Text = "Нарачка";
+            this.Load += new System.EventHandler(this.IzvrsuvanjeNaracka_Load);
             this.Controls.SetChildIndex(this.lblImeRestoran, 0);
             this.Controls.SetChildIndex(this.pictureBox3, 0);
             this.Controls.SetChildIndex(this.labelFASAP1, 0);

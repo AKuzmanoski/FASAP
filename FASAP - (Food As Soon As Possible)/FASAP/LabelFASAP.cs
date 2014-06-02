@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
+using SmetkaZaNaracka.Properties;
 
 namespace SmetkaZaNaracka
 {
@@ -19,6 +20,8 @@ namespace SmetkaZaNaracka
             this.Init();
         }
 
+        
+
         public LabelFASAP(IContainer container)
         {
             container.Add(this);
@@ -31,9 +34,12 @@ namespace SmetkaZaNaracka
         {
             this.BackColor = Color.Transparent;
             this.Text = "";
+            this.Image = Resources.LabelBackground2;
             this.Font = new Font("Trebuchet MS", 16, FontStyle.Bold);
             this.ForeColor = Color.White;
         }
+
+        
 
         /// <summary>
         /// Updates the value of the object instance
@@ -47,6 +53,22 @@ namespace SmetkaZaNaracka
                 this.Text = this.LblObject.ToString();
             else
                 this.Text = "";
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            // Draw image, sized to control
+            if (this.Image != null)
+            {
+                e.Graphics.DrawImage(this.Image, 0, 0, this.Width, this.Height);
+            }
+
+            // Draw text, centered vertically and horizontally
+            RectangleF rectangle = new RectangleF(0, 0, this.Width, this.Height);
+            StringFormat format = new StringFormat();
+            format.LineAlignment = StringAlignment.Center;
+            format.Alignment = StringAlignment.Center;
+            e.Graphics.DrawString(this.Text, this.Font, new SolidBrush(ForeColor), rectangle, format);
         }
     }
 }
