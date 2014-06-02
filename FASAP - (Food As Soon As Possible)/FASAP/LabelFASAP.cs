@@ -50,9 +50,9 @@ namespace SmetkaZaNaracka
         {
             this.LblObject = obj;
             if (this.LblObject != null)
-                this.Text = this.LblObject.ToString();
+                this.Text = String.Format(":{0}: ",this.LblObject.ToString());
             else
-                this.Text = "";
+                this.Text = ":: ";
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -70,6 +70,16 @@ namespace SmetkaZaNaracka
             format.LineAlignment = StringAlignment.Center;
             format.Alignment = StringAlignment.Center;
             e.Graphics.DrawString(this.Text, this.Font, new SolidBrush(ForeColor), rectangle, format);
+        }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
     }
 }

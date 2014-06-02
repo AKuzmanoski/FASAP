@@ -11,84 +11,28 @@ using Oracle.DataAccess.Client;
 
 namespace SmetkaZaNaracka
 {
-    public partial class SearchFilter : Form
+    public partial class SearchFilter : BackgroundForm
     {
+        public List<Restoran> Restorani { get; set; }
         public OracleConnection Conn { get; set; }
-        Font fnt;
         List<PictureBox> lista;
-        private List<Restoran> Restorani { get; set; }
+        List<LabelFASAP> labeli;
         public SearchFilter(List<Restoran> restorani, OracleConnection conn)
         {
             InitializeComponent();
-            Conn = conn;
+            labeli = new List<LabelFASAP>();
             Restorani = restorani;
+            Conn = conn;
         }
 
-        private void SearchFilter_Load(object sender, EventArgs e)
+        private void textBox1_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox1.Size = new Size(pictureBox1.Size.Width - 8, pictureBox1.Size.Width - 8);
-            pictureBox1.Location = new Point(pictureBox1.Location.X + 4, pictureBox1.Location.Y + 4);
-            fnt = textBox1.Font;
-
-            lista = new List<PictureBox>();
-            lista.Add(pictureBox2);
-            lista.Add(pictureBox3);
-            lista.Add(pictureBox4);
-            lista.Add(pictureBox5);
-            lista.Add(pictureBox6);
-
-
-            foreach (var obj in Restorani)
-                lbRestorani.Items.Add(obj);
-            /*Restoran restoran = new Restoran();
-            restoran.RestoranID = 1;
-            restoran.Ime = "Гостилница Лира";
-            restoran.Ulica = "Никола Теслa бр.11";
-            restoran.Grad = "Скопје";
-            restoran.RabotnoVreme = "09:00 - 24:00 / 01:00";
-            restoran.SlobodniMasi = 15;
-            restoran.CenaZaDostava = 180;
-            restoran.PragZaDostava = 800;
-            restoran.DatumNaOtvoranje = new DateTime(1996, 5, 25);
-            restoran.Kategorija = "Гостилница";
-            restoran.BrojMasi = 30;
-            restoran.Kapacitet = 150;
-            restoran.Rejting = 7.8;
-            restoran.Kontakt.Add(new Telefon("02/3061-726"));
-            lbRestorani.Items.Add(restoran);
-            restoran = new Restoran();
-            restoran.RestoranID = 2;
-            restoran.Ime = "Ресторан Бигор - Вруток";
-            restoran.Ulica = "Извор - Вруток";
-            restoran.Grad = "Гостивар";
-            restoran.RabotnoVreme = "Пон - Пет: 11:00 - 24:00";
-            restoran.SlobodniMasi = 5;
-            restoran.CenaZaDostava = 220;
-            restoran.PragZaDostava = 850;
-            restoran.DatumNaOtvoranje = new DateTime(1996, 3, 1);
-            restoran.Kategorija = "Рибен";
-            restoran.BrojMasi = 20;
-            restoran.Kapacitet = 150;
-            restoran.Rejting = 9.9;
-            restoran.Kontakt.Add(new Telefon("075/304-993"));
-            restoran.Kontakt.Add(new Telefon("042/215-005"));
-            lbRestorani.Items.Add(restoran);
-            restoran = new Restoran();
-            restoran.RestoranID = 3;
-            restoran.Ime = "Ресторан Амигос";
-            restoran.Ulica = "ул. Македонија";
-            restoran.Grad = "Скопје";
-            restoran.RabotnoVreme = "09:00 - 24:00 / 01:00";
-            restoran.SlobodniMasi = 10;
-            restoran.CenaZaDostava = 160;
-            restoran.PragZaDostava = 650;
-            restoran.DatumNaOtvoranje = new DateTime(2006, 5, 25);
-            restoran.Kategorija = "Мексикански";
-            restoran.BrojMasi = 25;
-            restoran.Kapacitet = 100;
-            restoran.Rejting = 7.3;
-            lbRestorani.Items.Add(restoran);*/
-            postaviRejting(0);
+            if (!textBox1.Focused && textBox1.Font.Italic)
+            {
+                textBox1.BackColor = Color.Sienna;
+                textBox1.ForeColor = Color.Khaki;
+                pictureBox3.BackColor = Color.Sienna;
+            }
         }
 
         private void postaviRejting(double rejting)
@@ -104,17 +48,7 @@ namespace SmetkaZaNaracka
                 else pb.Image = Resources.Prazna_zvezda;
 
             }
-                
-        }
 
-        private void textBox1_MouseLeave(object sender, EventArgs e)
-        {
-            if (!textBox1.Focused && textBox1.Font.Italic)
-            {
-                textBox1.BackColor = SystemColors.GradientInactiveCaption;
-                textBox1.ForeColor = SystemColors.ControlDark;
-                pictureBox1.BackColor = SystemColors.GradientInactiveCaption;
-            }
         }
 
         private void textBox1_MouseDown(object sender, MouseEventArgs e)
@@ -122,10 +56,10 @@ namespace SmetkaZaNaracka
             if (textBox1.Font.Italic)
             {
                 textBox1.Text = "";
-                textBox1.BackColor = SystemColors.Window;
-                textBox1.Font = Control.DefaultFont;
-                textBox1.ForeColor = SystemColors.ControlText;
-                pictureBox1.BackColor = SystemColors.Window;
+                textBox1.BackColor = Color.Khaki;
+                textBox1.Font = new Font("Trebuchet MS", 12, FontStyle.Bold);
+                textBox1.ForeColor = Color.Sienna;
+                pictureBox3.BackColor = Color.Khaki;
             }
         }
 
@@ -134,37 +68,10 @@ namespace SmetkaZaNaracka
             if (textBox1.Text.Length == 0)
             {
                 textBox1.Text = "Пребарај FASAP - Ресторани";
-                textBox1.BackColor = SystemColors.GradientInactiveCaption;
-                textBox1.ForeColor = SystemColors.ControlDark;
-                pictureBox1.BackColor = SystemColors.GradientInactiveCaption;
-                textBox1.Font = fnt;
-            }
-        }
-
-        private void lbRestorani_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            lbKontakt.Items.Clear();
-            Object obj = lbRestorani.SelectedItem;
-            if (obj != null)
-            {
-                Restoran restoran = obj as Restoran;
-                postaviRejting(restoran.Rejting);
-                tbGrad.Text = restoran.Grad;
-                tbKategorija.Text = restoran.Kategorija;
-                tbSlobodni.Text = restoran.SlobodniMasi.ToString();
-                tbUlica.Text = restoran.Ulica;
-                tbVreme.Text = restoran.RabotnoVreme;
-                foreach (Telefon t in restoran.Kontakt)
-                    lbKontakt.Items.Add(t);
-            }
-            else
-            {
-                tbGrad.Text = "";
-                tbKategorija.Text = "";
-                tbSlobodni.Text = "";
-                tbUlica.Text = "";
-                tbVreme.Text = "";
-                postaviRejting(0);
+                textBox1.BackColor = Color.Sienna;
+                textBox1.ForeColor = Color.Khaki;
+                pictureBox3.BackColor = Color.Sienna;
+                textBox1.Font = new Font("Trebuchet MS", 12, FontStyle.Italic);
             }
         }
 
@@ -172,17 +79,93 @@ namespace SmetkaZaNaracka
         {
             if (textBox1.Font.Italic)
             {
-                textBox1.BackColor = SystemColors.InactiveBorder;
-                textBox1.ForeColor = SystemColors.InactiveCaption;
-                pictureBox1.BackColor = SystemColors.InactiveBorder;
+                textBox1.BackColor = Color.SaddleBrown;
+                pictureBox3.BackColor = Color.SaddleBrown ;
             }
         }
 
-        private void lbRestorani_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void pbListUp_MouseEnter(object sender, EventArgs e)
         {
-            var obj = (Restoran)lbRestorani.SelectedItem;
-            FasapNaracka fasapNaracka = new FasapNaracka(obj, Conn);
-            fasapNaracka.Show();
+            Cursor = Cursors.Hand;
+            PictureBox pb = sender as PictureBox;
+            pb.Image = Resources.LightArrowUp;
+        }
+
+        private void pbListUp_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
+            PictureBox pb = sender as PictureBox;
+            pb.Image = Resources.DarkArrowUp;
+        }
+
+        private void pbListDown_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+            PictureBox pb = sender as PictureBox;
+            pb.Image = Resources.LightArrowDown;
+        }
+
+        private void pbListDown_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
+            PictureBox pb = sender as PictureBox;
+            pb.Image = Resources.DarkArrowDown;
+        }
+
+        private void pbContactLeft_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+            PictureBox pb = sender as PictureBox;
+            pb.Image = Resources.LightArrowLeft;
+        }
+
+        private void pbContactLeft_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
+            PictureBox pb = sender as PictureBox;
+            pb.Image = Resources.DarkArrowLeft;
+        }
+
+        private void pbContactRight_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+            PictureBox pb = sender as PictureBox;
+            pb.Image = Resources.LightArrowRight___Copy;
+        }
+
+        private void pbContactRight_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
+            PictureBox pb = sender as PictureBox;
+            pb.Image = Resources.DarkArrowRight;
+        }
+
+        private void SearchFilter1_Load(object sender, EventArgs e)
+        {
+            lista = new List<PictureBox>();
+            lista.Add(pbZvezda1);
+            lista.Add(pbZvezda2);
+            lista.Add(pbZvezda3);
+            lista.Add(pbZvezda4);
+            lista.Add(pbZvezda5);
+
+            labeli.Add(lbl1);
+            labeli.Add(lbl2);
+            labeli.Add(lbl3);
+            labeli.Add(lbl4);
+            labeli.Add(lbl5);
+            labeli.Add(lbl6);
+            labeli.Add(lbl7);
+            labeli.Add(lbl8);
+            labeli.Add(lbl9);
+            labeli.Add(lbl10);
+            labeli.Add(lbl11);
+            labeli.Add(lbl12);
+
+            for (int i = 0; i < Restorani.Count && i < labeli.Count; i++)
+                labeli[i].UpdateObject(Restorani[i]);
+            
+            postaviRejting(0);
         }
     }
 }
