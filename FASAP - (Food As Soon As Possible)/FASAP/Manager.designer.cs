@@ -1,4 +1,4 @@
-﻿namespace Manager
+﻿namespace SmetkaZaNaracka
 {
     partial class Manager
     {

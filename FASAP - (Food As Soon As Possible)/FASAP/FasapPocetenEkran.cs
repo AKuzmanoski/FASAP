@@ -107,6 +107,12 @@ namespace SmetkaZaNaracka
             IzvrsuvanjeNaracka fasapNaracka = new IzvrsuvanjeNaracka(obj, Conn);
             fasapNaracka.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            InfoForma f = new InfoForma(Conn);
+            f.Show();
+        }
     }
 }
 
